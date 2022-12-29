@@ -6,8 +6,19 @@ import styles from '../styles/Home.module.scss'
 import Intro from '../components/Intro'
 import Card from '../components/Card'
 
-class Home extends React.Component {
-  constructor(props) {
+interface HomeProps { }
+
+interface HomeState {
+  questions: Array<{
+    id: number;
+    created_at: string;
+    question: string;
+    answer?: string;
+  }>
+}
+
+class Home extends React.Component<HomeProps, HomeState> {
+  constructor(props: {}) {
     super(props)
 
     this.state = {
