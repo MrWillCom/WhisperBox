@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Config from './_config'
+import Config from '../config'
 import styles from '../styles/Home.module.scss'
 
 import Intro from '../components/Intro'
